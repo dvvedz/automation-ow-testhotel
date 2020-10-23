@@ -1,3 +1,5 @@
+# Hotel Test - Testautomatisering kurs Nackademin
+
 # Tester Hotel
 
 ### Run the project for testing
