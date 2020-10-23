@@ -1,5 +1,7 @@
 # Hotel Test - Testautomatisering kurs Nackademin
 
+I detta projekt jobbar vi med att automatisera tester med hjälp av cypress
+
 # Tester Hotel
 
 ### Run the project for testing
