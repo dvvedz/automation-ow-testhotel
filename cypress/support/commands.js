@@ -15,7 +15,7 @@ Cypress.Commands.add("createRoomApi", () => {
     cy.request({
         method: "POST",
         url: "/api/room/new",
-        body: `{"features":["penthouse"],"category":"twin","number":"0","floor":"0","available":true,"price":"99"}`,
+        body: {features:["penthouse"], category:"twin", number:"1337", floor:"1337", available:"true", price:"1337"},
         headers: { 
             "X-User-Auth": `${JSON.stringify(JSON.parse(window.localStorage.getItem("tester-hotel")).user)}` // well well :)
         }

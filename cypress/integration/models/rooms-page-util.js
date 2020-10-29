@@ -1,7 +1,6 @@
 export class CreateRoom {
     /**
      * This class creates a new room and checks if it was created correctly
-     * @constructor
      * @param {string} cat_val 
      * @param {string} num_val 
      * @param {string} floor_val 
@@ -44,7 +43,8 @@ export class CreateRoom {
         cy.get(this.SAVE_BTN).contains("Save").click();
     }
     /**
-     * Checks if room was created correctly
+     * Checks if the last item in the room container contains values from the create method
+     * and the edit method in class EditRoom
      * @TODO create better checks
      */
     roomIsCreated()  {
@@ -65,8 +65,21 @@ export class CreateRoom {
 }
 
 export class EditRoom {
-    constructor() {
-        this.cr = new CreateRoom();
+    /**
+     * @param {string} cat_val 
+     * @param {string} num_val 
+     * @param {string} floor_val 
+     * @param {string} price_val 
+     * @param {array} feat_val 
+     * @param {string} available_val 
+     */
+    constructor(cat_val, num_val, floor_val, price_val, feat_val, available_val) {
+        // init instance
+        this.cr = new CreateRoom(); // Use variables from CreateRoom
+        // Elements
+        this.ROOM_CONT = this.cr.ROOM_CONT;
+        this.AVAILABLE_CHECK = this.cr.AVAILABLE_CHECK;
+        this.SAVE_BTN = this.cr.SAVE_BTN;
         this.DOTS = ".action";
         this.EDIT_BTN = ".menu > :nth-child(1)";
         this.PAGE_TITLE = "h2";
@@ -83,18 +96,36 @@ export class EditRoom {
         this.FEAT_VAL = feat_val;
         this.AVAILABLE_VAL = available_val;
     }
+    /**
+     * This method edits the last item in the room container
+     */
     edit() {
         cy.visit("/rooms");
-        cy.get(this.cr.ROOM_CONT).last().children(this.DOTS).click();
+        cy.get(this.ROOM_CONT).last().children(this.DOTS).click();
         cy.get(this.EDIT_BTN).click();
         cy.get(this.PAGE_TITLE).should("contain", "Room")
         .and("contain", "Delete");
         cy.get(this.CAT_FIELD).select(this.CAT_VAL);
-        cy.get(this.NUM_FIELD).type('{backspace}1337');
-        cy.get(this.FLOOR_FIELD).type('{backspace}1337');
-        cy.get(this.cr.AVAILABLE_CHECK).click().contains(" ✓ ")
-        cy.get(this.PRICE_FIELD).type('{backspace}1337');
+        cy.get(this.NUM_FIELD).clear().type(this.NUM_VAL);
+        cy.get(this.FLOOR_FIELD).clear().type(this.FLOOR_VAL);
+        cy.get(this.AVAILABLE_CHECK).click().contains(" ✓ ")
+        cy.get(this.PRICE_FIELD).clear().type(this.PRICE_VAL);
         cy.get(this.FEAT_FIELD).select(this.FEAT_VAL);
-        cy.get(this.cr.SAVE_BTN).contains("Save").click();
+        cy.get(this.SAVE_BTN).contains("Save").click();
+    }
+}
+
+export class DeleteRoom {
+    constructor() {
+        // init Instance
+        this.er = new EditRoom(); // only using init var from EditRoom
+        this.DOTS = this.er.DOTS;
+        this.ROOM_CONT = this.er.ROOM_CONT
+        this.DEL_BTN = ".menu > :nth-child(2)"
+    }
+    delete() {
+        cy.visit("/rooms")
+        cy.get(this.ROOM_CONT).last().children(this.DOTS).click();
+        cy.get(this.DEL_BTN).click();
     }
 }

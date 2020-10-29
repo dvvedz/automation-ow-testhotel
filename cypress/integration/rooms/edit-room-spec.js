@@ -1,20 +1,23 @@
 const { visitEachChild } = require("typescript");
 
 import { EditRoom } from "../models/rooms-page-util"
+import { CreateRoom } from "../models/rooms-page-util"
 
 describe("Edit room", () => {
-    // cat_val, num_val, floor_val price_val, feat_val, available_val
-    // let cr = new CreateRoom();
-    const er = new EditRoom();
-    const cr = new CreateRoom("twin", "99", "99", "999", ["penthouse"], "true");
+    const er = new EditRoom("single", "1111", "1111", "1111", ["penthouse"], "true");
+    const cr = new CreateRoom("single", "1111", "1111", "1111", ["penthouse"], "true");
+    // these two instances need to have the same data 
+    // thats because we are using the method roomIsCreated
+    // from CreateRoom class, to check if the last room contains the values
+
     beforeEach(() => {
         cy.login(); // logs the user in with api
-        cy.createRoomApi(); // creates a room with help from the api
     })
     it("Edits room", () => {
+        cy.createRoomApi(); // creates a room with help from the api
         er.edit();
     });
     it("Checks if edit was succesfull", () => {
-
+        cr.roomIsCreated(); // Reusing method from CreateRoom class to check if room was edited correctly
     }) 
 });
