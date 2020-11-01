@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-01T18:53:24.543Z",
+    "end": "2020-11-01T18:53:27.100Z",
+    "duration": 2557,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ea64ab2a-bfba-4e2a-8692-12f20fd679ce",
+      "title": "",
+      "fullFile": "cypress/integration/rooms/create-room-spec.js",
+      "file": "cypress/integration/rooms/create-room-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6e2e36f9-c1ba-4b04-8106-385dabfe5651",
+          "title": "Create a room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create a new room",
+              "fullTitle": "Create a room Create a new room",
+              "timedOut": null,
+              "duration": 1863,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "CR.create();",
+              "err": {},
+              "uuid": "2a823d49-c77e-4acf-8053-35444a14886c",
+              "parentUUID": "6e2e36f9-c1ba-4b04-8106-385dabfe5651",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks if room was created correctly",
+              "fullTitle": "Create a room Checks if room was created correctly",
+              "timedOut": null,
+              "duration": 669,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "CR.roomIsCreated();",
+              "err": {},
+              "uuid": "9fe067d5-6871-4981-929e-be0479ed342f",
+              "parentUUID": "6e2e36f9-c1ba-4b04-8106-385dabfe5651",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2a823d49-c77e-4acf-8053-35444a14886c",
+            "9fe067d5-6871-4981-929e-be0479ed342f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2532,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./cypress/report/awesome-reports",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
