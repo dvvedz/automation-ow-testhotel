@@ -29,3 +29,14 @@ Cypress.Commands.add("createRoomApi", (cat_val, num_val, floor_val, price_val, f
         }
     })
 });
+
+Cypress.Commands.add("createClientApi", (name_val, email_val, tel_val) => {
+    cy.request({
+        method: "POST",
+        url: "/api/client/new",
+        body: {name: name_val, email: email_val, telephone: tel_val},
+        headers: { 
+            "X-User-Auth": `${JSON.stringify(JSON.parse(window.localStorage.getItem("tester-hotel")).user)}` // well well :)
+        }
+    })
+});

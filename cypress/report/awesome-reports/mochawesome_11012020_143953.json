@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-11-01T10:22:04.105Z",
-    "end": "2020-11-01T10:22:05.084Z",
-    "duration": 979,
+    "start": "2020-11-01T13:39:52.768Z",
+    "end": "2020-11-01T13:39:53.752Z",
+    "duration": 984,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6c1e5779-1ffc-447f-bbb8-cb0db25aad6d",
+      "uuid": "bfb7743e-ccdd-4ab9-9483-8b2ad5cd863c",
       "title": "",
       "fullFile": "cypress/integration/rooms/delete-room-spec.js",
       "file": "cypress/integration/rooms/delete-room-spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d0a7b28b-1be7-432c-99eb-8fadbbbc241c",
+          "uuid": "e4cd0f16-5e2e-4e3a-a2db-aa8eef7c876e",
           "title": "Delete a room",
           "fullFile": "",
           "file": "",
@@ -35,10 +35,10 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Does",
-              "fullTitle": "Delete a room Does",
+              "title": "Creates room with api request and then e2e deleting that room",
+              "fullTitle": "Delete a room Creates room with api request and then e2e deleting that room",
               "timedOut": null,
-              "duration": 947,
+              "duration": 960,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.createRoomApi(\"twin\", 1337, 1337, 1337, [\"penthouse\"], true);\ndr.delete();",
               "err": {},
-              "uuid": "17fa28cb-e24c-4e32-93ac-0513c06f22ee",
-              "parentUUID": "d0a7b28b-1be7-432c-99eb-8fadbbbc241c",
+              "uuid": "a462b88b-c8e1-4829-a0d6-b329f9d69708",
+              "parentUUID": "e4cd0f16-5e2e-4e3a-a2db-aa8eef7c876e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "17fa28cb-e24c-4e32-93ac-0513c06f22ee"
+            "a462b88b-c8e1-4829-a0d6-b329f9d69708"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 947,
+          "duration": 960,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
