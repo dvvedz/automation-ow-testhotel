@@ -7,8 +7,8 @@ describe("Delete a room", () => {
     beforeEach(() => {
         cy.login()
     })
-    it("Does", () => {
-        cy.createRoomApi()
-        dr.delete() 
+    it("Creates a room with api request and then e2e deleting that room", () => {
+        cy.createRoomApi("twin", 1337, 1337, 1337, ["penthouse"], true);
+        dr.delete();
     })
 });

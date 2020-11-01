@@ -50,28 +50,28 @@ export class CreateRoom {
     roomIsCreated()  {
         cy.visit("/rooms");
         cy.get(this.ROOM_CONT).last()
-        .contains(this.CAT_VAL, { matchCase: false });
+        .contains(String(this.CAT_VAL), { matchCase: false });
         cy.get(this.ROOM_CONT).last()
-        .contains(this.NUM_VAL, {matchCase: false});
+        .contains(String(this.NUM_VAL), {matchCase: false});
         cy.get(this.ROOM_CONT).last()
-        .contains(this.AVAILABLE_VAL, {matchCase: false});
+        .contains(String(this.AVAILABLE_VAL), {matchCase: false});
         cy.get(this.ROOM_CONT).last()
-        .contains(this.PRICE_VAL, {matchCase: false});
+        .contains(String(this.PRICE_VAL), {matchCase: false});
         cy.get(this.ROOM_CONT).last()
-        .contains(this.FEAT_VAL[0], {matchCase: false});
+        .contains(String(this.FEAT_VAL[0]), {matchCase: false});
         cy.get(this.ROOM_CONT).last()
-        .contains(this.FLOOR_VAL, {matchCase: false});
+        .contains(String(this.FLOOR_VAL), {matchCase: false});
     }
 }
 
 export class EditRoom {
     /**
      * @param {string} cat_val 
-     * @param {string} num_val 
-     * @param {string} floor_val 
-     * @param {string} price_val 
+     * @param {int} num_val 
+     * @param {int} floor_val 
+     * @param {int} price_val 
      * @param {array} feat_val 
-     * @param {string} available_val 
+     * @param {boolean} available_val 
      */
     constructor(cat_val, num_val, floor_val, price_val, feat_val, available_val) {
         // init instance
@@ -108,7 +108,7 @@ export class EditRoom {
         cy.get(this.CAT_FIELD).select(this.CAT_VAL);
         cy.get(this.NUM_FIELD).clear().type(this.NUM_VAL);
         cy.get(this.FLOOR_FIELD).clear().type(this.FLOOR_VAL);
-        cy.get(this.AVAILABLE_CHECK).click().contains(" ✓ ")
+        cy.get(this.AVAILABLE_CHECK).click();
         cy.get(this.PRICE_FIELD).clear().type(this.PRICE_VAL);
         cy.get(this.FEAT_FIELD).select(this.FEAT_VAL);
         cy.get(this.SAVE_BTN).contains("Save").click();
