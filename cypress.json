@@ -2,7 +2,7 @@
 	"baseUrl": "http://localhost:3000",
 	"reporter": "mochawsome",
 	"reporterOptions": {
-		"reportDir": "./cypress/report/awesome-reports",
+		"reportDir": "./cypress/report/reports",
 		"overwrite": true,
 		"html": true,
 		"json": true,

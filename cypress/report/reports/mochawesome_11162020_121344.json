@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-16T11:13:41.711Z",
+    "end": "2020-11-16T11:13:44.703Z",
+    "duration": 2992,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cf9ccd55-49f2-4eb4-a169-39d2095da0c8",
+      "title": "",
+      "fullFile": "cypress/integration/rooms/edit-room-spec.js",
+      "file": "cypress/integration/rooms/edit-room-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3d4040ba-4ef0-41f4-a017-dbadcff8134b",
+          "title": "Edit room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Edits room",
+              "fullTitle": "Edit room Edits room",
+              "timedOut": null,
+              "duration": 2294,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createRoomApi(\"twin\", 1337, 1337, 1337, [\"penthouse\"], true); // creates a room with help from the api\ner.edit();",
+              "err": {},
+              "uuid": "c992d9c2-e092-4b54-b01b-ccd24c1a0949",
+              "parentUUID": "3d4040ba-4ef0-41f4-a017-dbadcff8134b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks if edit was succesfull",
+              "fullTitle": "Edit room Checks if edit was succesfull",
+              "timedOut": null,
+              "duration": 673,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cr.roomIsCreated(); // Reusing method from CreateRoom class to check if room was edited correctly",
+              "err": {},
+              "uuid": "6f363cfc-92c8-4b97-ac94-710efb085410",
+              "parentUUID": "3d4040ba-4ef0-41f4-a017-dbadcff8134b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c992d9c2-e092-4b54-b01b-ccd24c1a0949",
+            "6f363cfc-92c8-4b97-ac94-710efb085410"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2967,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./cypress/report/reports",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

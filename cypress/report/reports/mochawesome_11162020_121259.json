@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2020-11-01T19:04:36.012Z",
-    "end": "2020-11-01T19:04:36.016Z",
-    "duration": 4,
+    "start": "2020-11-16T11:12:59.907Z",
+    "end": "2020-11-16T11:12:59.907Z",
+    "duration": 0,
     "testsRegistered": 0,
     "passPercent": null,
     "pendingPercent": null,
@@ -37,7 +37,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "./cypress/report/awesome-reports",
+        "reportDir": "./cypress/report/reports",
         "overwrite": true,
         "html": true,
         "json": true,

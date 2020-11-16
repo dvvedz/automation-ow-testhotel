@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-11-01T19:04:18.891Z",
-    "end": "2020-11-01T19:04:21.335Z",
-    "duration": 2444,
+    "start": "2020-11-16T11:28:47.785Z",
+    "end": "2020-11-16T11:28:50.231Z",
+    "duration": 2446,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b237cf04-90ed-4a7f-a33c-61401860a77d",
+      "uuid": "e6d09626-84ed-47f5-8449-743c993128d8",
       "title": "",
       "fullFile": "cypress/integration/clients/edit-client-spec.js",
       "file": "cypress/integration/clients/edit-client-spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "261c4b99-b7af-4cf1-8182-a523964b68dc",
+          "uuid": "f6c8e0f8-29ae-4b26-8fbe-c36abe37b669",
           "title": "Edit client",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Edits a client",
               "fullTitle": "Edit client Edits a client",
               "timedOut": null,
-              "duration": 2420,
+              "duration": 2409,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.createClientApi(\"createdFrom Api\", \"test@mail.com\", \"012345678\");\nec.edit();\ncc.isCreated();",
               "err": {},
-              "uuid": "37f19d42-ef35-4474-82ba-e25382b4e4fb",
-              "parentUUID": "261c4b99-b7af-4cf1-8182-a523964b68dc",
+              "uuid": "3d537578-a4d0-4a26-8ad9-fcc6b2f8cfa5",
+              "parentUUID": "f6c8e0f8-29ae-4b26-8fbe-c36abe37b669",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "37f19d42-ef35-4474-82ba-e25382b4e4fb"
+            "3d537578-a4d0-4a26-8ad9-fcc6b2f8cfa5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2420,
+          "duration": 2409,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,7 +94,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "./cypress/report/awesome-reports",
+        "reportDir": "./cypress/report/reports",
         "overwrite": true,
         "html": true,
         "json": true,

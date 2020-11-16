@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-11-01T19:04:04.758Z",
-    "end": "2020-11-01T19:04:06.808Z",
-    "duration": 2050,
+    "start": "2020-11-16T11:28:33.684Z",
+    "end": "2020-11-16T11:28:35.710Z",
+    "duration": 2026,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8daf7995-2b65-4167-b224-4c18b39f1f22",
+      "uuid": "a4de390a-c96b-4e36-9814-07c54eb9077c",
       "title": "",
       "fullFile": "cypress/integration/clients/create-client-spec.js",
       "file": "cypress/integration/clients/create-client-spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b0ad95ed-fa4c-43eb-b021-81d99a43bc66",
+          "uuid": "d8ae5761-2cd7-42e2-9208-b06d90bf9243",
           "title": "Create a client",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Creates client",
               "fullTitle": "Create a client Creates client",
               "timedOut": null,
-              "duration": 2025,
+              "duration": 2007,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cc.create();",
               "err": {},
-              "uuid": "08e8781a-4c1e-4437-baf9-36ce7f796175",
-              "parentUUID": "b0ad95ed-fa4c-43eb-b021-81d99a43bc66",
+              "uuid": "b840a16f-91d1-44b0-a687-f3f7f7ec6550",
+              "parentUUID": "d8ae5761-2cd7-42e2-9208-b06d90bf9243",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "08e8781a-4c1e-4437-baf9-36ce7f796175"
+            "b840a16f-91d1-44b0-a687-f3f7f7ec6550"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2025,
+          "duration": 2007,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,7 +94,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "./cypress/report/awesome-reports",
+        "reportDir": "./cypress/report/reports",
         "overwrite": true,
         "html": true,
         "json": true,

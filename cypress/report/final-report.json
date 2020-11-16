@@ -1,0 +1,704 @@
+{
+  "stats": {
+    "suites": 10,
+    "tests": 14,
+    "passes": 14,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-16T11:12:35.737Z",
+    "end": "2020-11-16T11:29:42.432Z",
+    "duration": 21931,
+    "testsRegistered": 14,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "08f122ff-88c1-48d4-8059-3503afbc1513",
+      "title": "",
+      "fullFile": "cypress/integration/clients/create-client-spec.js",
+      "file": "cypress/integration/clients/create-client-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "713cb4e2-d796-4135-9ba7-9d1d3283af73",
+          "title": "Create a client",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Creates client",
+              "fullTitle": "Create a client Creates client",
+              "timedOut": null,
+              "duration": 2164,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cc.create();",
+              "err": {},
+              "uuid": "bac73ddb-24c1-4849-a421-8ceccf8dfa31",
+              "parentUUID": "713cb4e2-d796-4135-9ba7-9d1d3283af73",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bac73ddb-24c1-4849-a421-8ceccf8dfa31"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2164,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "56e5f62e-3c76-4faa-8bb5-8d9d98298075",
+      "title": "",
+      "fullFile": "cypress/integration/clients/edit-client-spec.js",
+      "file": "cypress/integration/clients/edit-client-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a0e987fe-857b-4f15-a93a-03fbb20ee98b",
+          "title": "Edit client",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Edits a client",
+              "fullTitle": "Edit client Edits a client",
+              "timedOut": null,
+              "duration": 2383,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createClientApi(\"createdFrom Api\", \"test@mail.com\", \"012345678\");\nec.edit();\ncc.isCreated();",
+              "err": {},
+              "uuid": "61306507-1314-4c89-8fdf-a56ae4fe5315",
+              "parentUUID": "a0e987fe-857b-4f15-a93a-03fbb20ee98b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "61306507-1314-4c89-8fdf-a56ae4fe5315"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2383,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "61baf677-5f80-40db-95c0-e39d6b45b952",
+      "title": "",
+      "fullFile": "cypress/integration/rooms/create-room-spec.js",
+      "file": "cypress/integration/rooms/create-room-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4bea53a4-2290-42dc-b292-184c967b4d57",
+          "title": "Create a room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create a new room",
+              "fullTitle": "Create a room Create a new room",
+              "timedOut": null,
+              "duration": 1858,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "CR.create();",
+              "err": {},
+              "uuid": "26c09c11-1f8a-4d7b-a1ca-0a3a407f06f0",
+              "parentUUID": "4bea53a4-2290-42dc-b292-184c967b4d57",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks if room was created correctly",
+              "fullTitle": "Create a room Checks if room was created correctly",
+              "timedOut": null,
+              "duration": 656,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "CR.roomIsCreated();",
+              "err": {},
+              "uuid": "0ac545f7-2656-44ee-a1ef-6a507851ccfc",
+              "parentUUID": "4bea53a4-2290-42dc-b292-184c967b4d57",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "26c09c11-1f8a-4d7b-a1ca-0a3a407f06f0",
+            "0ac545f7-2656-44ee-a1ef-6a507851ccfc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2514,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "4472c31f-fbbd-4212-ab12-5005252b039b",
+      "title": "",
+      "fullFile": "cypress/integration/rooms/delete-room-spec.js",
+      "file": "cypress/integration/rooms/delete-room-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f09991cc-5be5-45e0-9d8c-f00adf2fc90d",
+          "title": "Delete a room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Creates room with api request and then e2e deleting that room",
+              "fullTitle": "Delete a room Creates room with api request and then e2e deleting that room",
+              "timedOut": null,
+              "duration": 940,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createRoomApi(\"twin\", 1337, 1337, 1337, [\"penthouse\"], true);\ndr.delete();",
+              "err": {},
+              "uuid": "5850ee71-4b41-4bdd-a523-d376586bf27e",
+              "parentUUID": "f09991cc-5be5-45e0-9d8c-f00adf2fc90d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5850ee71-4b41-4bdd-a523-d376586bf27e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 940,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "cf9ccd55-49f2-4eb4-a169-39d2095da0c8",
+      "title": "",
+      "fullFile": "cypress/integration/rooms/edit-room-spec.js",
+      "file": "cypress/integration/rooms/edit-room-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3d4040ba-4ef0-41f4-a017-dbadcff8134b",
+          "title": "Edit room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Edits room",
+              "fullTitle": "Edit room Edits room",
+              "timedOut": null,
+              "duration": 2294,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createRoomApi(\"twin\", 1337, 1337, 1337, [\"penthouse\"], true); // creates a room with help from the api\ner.edit();",
+              "err": {},
+              "uuid": "c992d9c2-e092-4b54-b01b-ccd24c1a0949",
+              "parentUUID": "3d4040ba-4ef0-41f4-a017-dbadcff8134b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks if edit was succesfull",
+              "fullTitle": "Edit room Checks if edit was succesfull",
+              "timedOut": null,
+              "duration": 673,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cr.roomIsCreated(); // Reusing method from CreateRoom class to check if room was edited correctly",
+              "err": {},
+              "uuid": "6f363cfc-92c8-4b97-ac94-710efb085410",
+              "parentUUID": "3d4040ba-4ef0-41f4-a017-dbadcff8134b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c992d9c2-e092-4b54-b01b-ccd24c1a0949",
+            "6f363cfc-92c8-4b97-ac94-710efb085410"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2967,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a4de390a-c96b-4e36-9814-07c54eb9077c",
+      "title": "",
+      "fullFile": "cypress/integration/clients/create-client-spec.js",
+      "file": "cypress/integration/clients/create-client-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d8ae5761-2cd7-42e2-9208-b06d90bf9243",
+          "title": "Create a client",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Creates client",
+              "fullTitle": "Create a client Creates client",
+              "timedOut": null,
+              "duration": 2007,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cc.create();",
+              "err": {},
+              "uuid": "b840a16f-91d1-44b0-a687-f3f7f7ec6550",
+              "parentUUID": "d8ae5761-2cd7-42e2-9208-b06d90bf9243",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b840a16f-91d1-44b0-a687-f3f7f7ec6550"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2007,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e6d09626-84ed-47f5-8449-743c993128d8",
+      "title": "",
+      "fullFile": "cypress/integration/clients/edit-client-spec.js",
+      "file": "cypress/integration/clients/edit-client-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f6c8e0f8-29ae-4b26-8fbe-c36abe37b669",
+          "title": "Edit client",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Edits a client",
+              "fullTitle": "Edit client Edits a client",
+              "timedOut": null,
+              "duration": 2409,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createClientApi(\"createdFrom Api\", \"test@mail.com\", \"012345678\");\nec.edit();\ncc.isCreated();",
+              "err": {},
+              "uuid": "3d537578-a4d0-4a26-8ad9-fcc6b2f8cfa5",
+              "parentUUID": "f6c8e0f8-29ae-4b26-8fbe-c36abe37b669",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3d537578-a4d0-4a26-8ad9-fcc6b2f8cfa5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2409,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d8efa45f-ee2b-47f8-9094-2366a881e0ea",
+      "title": "",
+      "fullFile": "cypress/integration/rooms/create-room-spec.js",
+      "file": "cypress/integration/rooms/create-room-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cf70b271-8f67-4832-ac06-1860c6cfec12",
+          "title": "Create a room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create a new room",
+              "fullTitle": "Create a room Create a new room",
+              "timedOut": null,
+              "duration": 1933,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "CR.create();",
+              "err": {},
+              "uuid": "70dbefcf-15df-48a3-a472-66b4e549907e",
+              "parentUUID": "cf70b271-8f67-4832-ac06-1860c6cfec12",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks if room was created correctly",
+              "fullTitle": "Create a room Checks if room was created correctly",
+              "timedOut": null,
+              "duration": 675,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "CR.roomIsCreated();",
+              "err": {},
+              "uuid": "6706d102-553e-4a12-8842-0f8a75803d4a",
+              "parentUUID": "cf70b271-8f67-4832-ac06-1860c6cfec12",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "70dbefcf-15df-48a3-a472-66b4e549907e",
+            "6706d102-553e-4a12-8842-0f8a75803d4a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2608,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "194177c0-0ec8-41e3-a7bb-57e7de15c811",
+      "title": "",
+      "fullFile": "cypress/integration/rooms/delete-room-spec.js",
+      "file": "cypress/integration/rooms/delete-room-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a67b2276-7403-4419-80e6-6329c4d2eade",
+          "title": "Delete a room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Creates room with api request and then e2e deleting that room",
+              "fullTitle": "Delete a room Creates room with api request and then e2e deleting that room",
+              "timedOut": null,
+              "duration": 941,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createRoomApi(\"twin\", 1337, 1337, 1337, [\"penthouse\"], true);\ndr.delete();",
+              "err": {},
+              "uuid": "0b91b7bf-6b9a-41c2-bea1-7c82ca7aa536",
+              "parentUUID": "a67b2276-7403-4419-80e6-6329c4d2eade",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0b91b7bf-6b9a-41c2-bea1-7c82ca7aa536"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 941,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8288ddec-8b39-4cb8-9fb6-20fa12adac63",
+      "title": "",
+      "fullFile": "cypress/integration/rooms/edit-room-spec.js",
+      "file": "cypress/integration/rooms/edit-room-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1e7faf76-3529-46d6-a942-4b6855ef6fa5",
+          "title": "Edit room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Edits room",
+              "fullTitle": "Edit room Edits room",
+              "timedOut": null,
+              "duration": 2312,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createRoomApi(\"twin\", 1337, 1337, 1337, [\"penthouse\"], true); // creates a room with help from the api\ner.edit();",
+              "err": {},
+              "uuid": "c0c81ef8-e12f-4ccb-a72b-61202e911457",
+              "parentUUID": "1e7faf76-3529-46d6-a942-4b6855ef6fa5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks if edit was succesfull",
+              "fullTitle": "Edit room Checks if edit was succesfull",
+              "timedOut": null,
+              "duration": 686,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cr.roomIsCreated(); // Reusing method from CreateRoom class to check if room was edited correctly",
+              "err": {},
+              "uuid": "693ab53b-2117-43e0-a9e0-a6b082489c82",
+              "parentUUID": "1e7faf76-3529-46d6-a942-4b6855ef6fa5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c0c81ef8-e12f-4ccb-a72b-61202e911457",
+            "693ab53b-2117-43e0-a9e0-a6b082489c82"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2998,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./cypress/report/reports",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
